@@ -65,8 +65,9 @@
 
     <a href="aboutme.html">ABOUT ME!</a>
     <hr />
+    <h1>INTERESTING PLACES TO VISIT IN CITIES</h1>
     <p>Some of the cities i would like to recommend to visit the locations people like most.</p>
-    <table>
+    <table border="1">
         <tr>
             <th>CITY</th>
             <th>LOCATION</th>
@@ -93,6 +94,24 @@
             <td>8 HOURS</td>
         </tr>
     </table>
+    <hr />
+    <h1>DISPLAY CODE</h1>
+    <blockquote cite="https://stackoverflow.com/questions/60999230/test-whether-every-element-of-array-is-truthy"></blockquote>
+    <pre>
+        @function every($list, $function, $args...) {
+            @if not function-exists($function) {
+              @error "There is no `#{$function}` function.";
+            }
+            
+            @each $item in $list {
+              @if not call($function, $item, $args...) {
+                @return false;
+              }
+            }
+            
+            @return true;
+          }
+    </pre>
 </body>
 
 </html>
